@@ -1,8 +1,19 @@
 
+import os
+import logging
+import warnings
 from fastapi import FastAPI
 from app.gemini import analyze_incident_multimodal
 from app.datadog_snapshot import get_dashboard_snapshot
 from app.image_loader import load_dashboard_image
+
+# Suppress noisy deprecation UserWarnings from third-party libs (e.g. vertexai)
+warnings.filterwarnings("ignore", category=UserWarning)
+
+# Configure logging from `LOGLEVEL` env var (default INFO)
+LOGLEVEL = os.environ.get("LOGLEVEL", "INFO").upper()
+logging.basicConfig(level=LOGLEVEL)
+logger = logging.getLogger("app.main")
 
 app = FastAPI(title="AI SRE Copilot")
 
