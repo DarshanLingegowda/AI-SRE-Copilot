@@ -1,2 +1,7 @@
-# AI-SRE-Copilot
-This project uses Gemini’s multimodal capabilities via Google Cloud Vertex AI to analyze metrics, logs, and dashboard screenshots. No third-party AI services are used.
+AI SRE Copilot (Multimodal)
+AI-powered SRE assistant using Google Cloud Vertex AI (Gemini) and Datadog.
+Performs multimodal incident analysis using metrics, logs, and dashboard screenshots.
+Endpoint
+POST /analyze-incident-multimodal
+Compliance
+Uses only Google Cloud AI (Gemini) and Datadog.
