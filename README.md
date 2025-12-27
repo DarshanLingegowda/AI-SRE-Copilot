@@ -1,9 +1,6 @@
 AI SRE Copilot (Multimodal)
-AI-powered SRE assistant using Google Cloud Vertex AI (Gemini) and Datadog.
-Performs multimodal incident analysis using metrics, logs, and dashboard screenshots.
 
-ENDPOINT
-POST /analyze-incident-multimodal
+AI SRE Copilot is a multimodal AI-powered Site Reliability Engineering assistant for LLM applications.
+It uses Google Cloud Vertex AI (Gemini) and Datadog to transform observability data into explainable root cause analysis and actionable remediation steps.
 
-COMPLAINCE
-Uses only Google Cloud AI (Gemini) and Datadog.
+This project was built for the Datadog Challenge in the AI Partner Catalyst (Google Cloud) hackathon.
