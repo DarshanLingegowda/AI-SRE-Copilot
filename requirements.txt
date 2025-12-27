@@ -1,1 +1,6 @@
-
+fastapi
+uvicorn
+google-cloud-aiplatform
+datadog
+requests
+pillow
